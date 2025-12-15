@@ -2,16 +2,18 @@ package main
 
 import "fmt"
 
+// Динамический одномерный массив
+
 type DynamicArr struct {
-	data []int
-	length int
+	data     []int
+	length   int
 	capacity int
 }
 
 func NewDArr(startCapacity int) *DynamicArr {
 	return &DynamicArr{
-		data: make([]int, startCapacity),
-		length: 0,
+		data:     make([]int, startCapacity),
+		length:   0,
 		capacity: startCapacity,
 	}
 }
@@ -36,7 +38,7 @@ func (da *DynamicArr) Append(val int) {
 func (da *DynamicArr) Get(i int) (int, bool) {
 	if i < 0 || i >= da.length {
 		return 0, false
-	} 
+	}
 
 	return da.data[i], true
 }
@@ -47,10 +49,10 @@ func (da *DynamicArr) Set(i int, val int) bool {
 	}
 
 	da.data[i] = val
-	return true 
+	return true
 }
 
-func (da *DynamicArr) Length() int{
+func (da *DynamicArr) Length() int {
 	return da.length
 }
 

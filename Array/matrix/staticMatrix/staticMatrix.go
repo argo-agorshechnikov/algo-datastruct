@@ -41,6 +41,7 @@ func (sm *StaticMatrix) Print() {
 		for j := 0; j < sm.cols; j++ {
 			v, _ := sm.Get(i, j)
 			fmt.Print(v)
+			fmt.Print(" ")
 		}
 		fmt.Println()
 	}
@@ -49,7 +50,7 @@ func (sm *StaticMatrix) Print() {
 func main() {
 	sMatrix := NewStaticMatrix()
 	sMatrix.Set(0, 0, 5)
-	sMatrix.Set(1, 2, 55)
+	sMatrix.Set(1, 1, 55)
 	sMatrix.Set(2, 2, 555)
 
 	sMatrix.Print()

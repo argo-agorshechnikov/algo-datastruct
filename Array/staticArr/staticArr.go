@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// Статический одномерный массив
+
 type StaticArr struct {
 	data   [5]int
 	length int
