@@ -47,10 +47,6 @@ func (sa *StaticArr) Length() int {
 	return sa.length
 }
 
-func (sa *StaticArr) Size() int {
-	return len(sa.data)
-}
-
 func main() {
 	arr := NewStaticArr()
 	arr.Append(1)
