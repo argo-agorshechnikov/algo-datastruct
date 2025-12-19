@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// O(log n)
 func binarySearch(arr [5]int, target int) int {
 	left, right := 0, len(arr)-1
 
