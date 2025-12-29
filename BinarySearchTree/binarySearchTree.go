@@ -73,7 +73,7 @@ func (n *Node) Delete(val int) *Node {
 	
 }
 
-
+// Sorted output
 func (n *Node) InOrder() {
 	if n != nil {
 		(*Node)(n.Left).InOrder()
